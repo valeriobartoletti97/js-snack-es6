@@ -1,3 +1,4 @@
+"use strict";
 const bikeArray = [
     {
         name: 'Trek Domane',
@@ -16,3 +17,11 @@ const bikeArray = [
         weightInKG: 30
     },
 ];
+
+const Weights = [];
+bikeArray.forEach((el,index)=>{
+    const {weightInKG} = bikeArray[index];
+    Weights.push(weightInKG);
+ }
+);
+console.log(Weights);
