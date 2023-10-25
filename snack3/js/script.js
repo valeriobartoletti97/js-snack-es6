@@ -18,10 +18,15 @@ const bikeArray = [
     },
 ];
 
-const Weights = [];
+const weights = [];
 bikeArray.forEach((el,index)=>{
     const {weightInKG} = bikeArray[index];
-    Weights.push(weightInKG);
+    weights.push(weightInKG);
  }
 );
-console.log(Weights);
+console.log(weights);
+
+const minWeightBike = bikeArray.filter((element)=> element.name && element.weightInKG === Math.min(...weights));
+console.log(minWeightBike);
+/* console.log(minWeightBike[0].name) */
+console.log(`The bike ${minWeightBike[0].name}is the less heavy with its ${minWeightBike[0].weightInKG} kg.`);
