@@ -20,7 +20,7 @@ const bikeArray = [
 
 const weights = [];
 bikeArray.forEach((el,index)=>{
-    const {weightInKG} = bikeArray[index];
+    const {weightInKG} = el;
     weights.push(weightInKG);
  }
 );
